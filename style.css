@@ -19,3 +19,35 @@ button {
   border-radius: 0 15px 0 15px;
   background-color: rgb(223, 237, 250);
 }
+.select_op {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  font-size: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #555;
+}
+
+.group_option .select_op::after {
+  content: "클릭";
+  display: inline-block;
+  font-size: 15px;
+  border: 1px solid #555;
+  white-space: nowrap;
+}
+
+.group_option .op_list {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.group_option .op_list.on {
+  height: 150px;
+}
+
+.op_item {
+  padding: 10px;
+}
