@@ -31,7 +31,7 @@ button {
 }
 
 .group_option .select_op::after {
-  content: "클릭";
+  content: "click";
   display: inline-block;
   font-size: 15px;
   border: 1px solid #555;
