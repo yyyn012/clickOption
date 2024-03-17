@@ -5,21 +5,25 @@
   font-size: 22px;
   font-weight: 700;
 }
+
 button {
   background: none;
   border: 0;
   cursor: pointer;
 }
-.box {
+
+.header {
   padding: 30px;
 }
-.group_option {
+
+.nav {
   width: 200px;
   padding: 20px;
   border-radius: 0 15px 0 15px;
   background-color: rgb(223, 237, 250);
 }
-.select_op {
+
+.nav-btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,7 +34,7 @@ button {
   border-bottom: 1px solid #555;
 }
 
-.group_option .select_op::after {
+.nav .nav-btn::after {
   content: "click";
   display: inline-block;
   font-size: 15px;
@@ -38,16 +42,16 @@ button {
   white-space: nowrap;
 }
 
-.group_option .op_list {
+.nav .ul {
   height: 0;
   overflow: hidden;
   transition: all 0.2s;
 }
 
-.group_option .op_list.on {
+.nav .ul.on {
   height: 150px;
 }
 
-.op_item {
+.list {
   padding: 10px;
 }
